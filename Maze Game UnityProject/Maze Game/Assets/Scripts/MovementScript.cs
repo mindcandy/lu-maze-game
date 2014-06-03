@@ -17,6 +17,11 @@ public class MovementScript : MonoBehaviour {
 	{
 		float inputX = Input.GetAxis("Horizontal");
 		float inputY = Input.GetAxis("Vertical");
+
+		//if(inputY == 0 && InputX == 0)
+		//{
+		//	animator.SetBool("Idle",true);
+		//}
 		
 		movement = new Vector2(
 			speed * inputX,
